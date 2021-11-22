@@ -4,6 +4,6 @@ services:
 
   reporter:
     image: izakmarais/grafana-reporter:${gr_version:-latest}
-    command: "-ip visualize.3phtechsolutions.com:3000 -proto https://"
+    command: "-ip visualize.3phtechsolutions.com -proto https://"
     ports:
       - "8686:8686"
